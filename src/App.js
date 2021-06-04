@@ -2,15 +2,20 @@ import './App.scss';
 
 import Header from './components/Header';
 import NavBar from './components/NavBar';
+import Hero from './components/Hero';
 
 const App = () => {
   return (
-    <>
-      <Header />
+		<>
+			<section className='fixed-top'>
+				<Header />
 
-      <NavBar />
-    </>
-  );
+				<NavBar />
+			</section>
+
+			<Hero />
+		</>
+	);
 }
 
 export default App;
