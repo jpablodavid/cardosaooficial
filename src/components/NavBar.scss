@@ -1,0 +1,22 @@
+.navbar {
+    top: 40px;
+    height: 94px;
+
+    nav {
+        flex: 2;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        display: block;
+        width: 100px;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+}
