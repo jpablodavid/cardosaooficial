@@ -1,7 +1,19 @@
 .hero {
-    background-image: url('../assets/test.jpg');
-    height: 150vh;
-    width: 100vw;
-    object-fit: cover;
-    background-repeat: unset;
+    background: url('../assets/hero.jpg')no-repeat bottom center scroll;
+    height: 100vh;
+    background-position: 30% 45%;
+    background-color: black;
+    background-size: cover;
+    position: relative;
+
+    h1 {
+        position: absolute;
+        top: 70%;
+        right: 39%;
+
+        font-size: 5rem;
+        text-transform: uppercase;
+
+        color: #fff;
+    }
 }

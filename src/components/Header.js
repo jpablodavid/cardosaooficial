@@ -13,9 +13,9 @@ const { FontAwesomeIcon } = require("@fortawesome/react-fontawesome");
 const { Container } = require("react-bootstrap");
 
 const Header = () => (
-	<section className="header">
+	<header>
 		<Container>
-			<header className="d-flex flex-row justify-content-between align-items-center">
+			<section className="header--section d-flex flex-row justify-content-between align-items-center">
 				<div className="d-flex flex-row align-items-center">
 					<FontAwesomeIcon className="me-3" icon={faEnvelope} color="#fff" />
 					<h3 className="me-3">Assine a newsletter para conteúdo exclusivo</h3>
@@ -25,46 +25,46 @@ const Header = () => (
 					<h3>Redes Sociais:</h3>
 
 					<ul className="d-flex flex-row align-items-center mb-0">
-						<li>
+						<li className="facebook">
 							<a href="www.facebook.com.br">
 								<FontAwesomeIcon icon={faFacebook} />
 							</a>
 						</li>
 
-						<li>
+						<li className="instagram">
 							<a href="www.instagram.com.br">
 								<FontAwesomeIcon icon={faInstagram} />
 							</a>
 						</li>
 
-						<li>
+						<li className="twitter">
 							<a href="www.twitter.com.br">
 								<FontAwesomeIcon icon={faTwitter} />
 							</a>
 						</li>
 
-						<li>
+						<li className="youtube">
 							<a href="www.youtube.com.br">
 								<FontAwesomeIcon icon={faYoutube} />
 							</a>
 						</li>
 
-						<li>
+						<li className="spotify">
 							<a href="www.spotify.com.br">
 								<FontAwesomeIcon icon={faSpotify} />
 							</a>
 						</li>
 
-						<li>
+						<li className="deezer">
 							<a href="www.deezer.com.br">
 								<FontAwesomeIcon icon={faDeezer} />
 							</a>
 						</li>
 					</ul>
 				</div>
-			</header>
+			</section>
 		</Container>
-	</section>
+	</header>
 );
 
 export default Header;

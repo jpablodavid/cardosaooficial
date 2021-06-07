@@ -1,8 +1,8 @@
-.header{
+header{
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-header {
+.header--section {
     height: 40px;
 
     h3 {
@@ -26,8 +26,28 @@ header {
         cursor: pointer;
     }
 
-    li:hover {
-        background-color: cornflowerblue;
+    .facebook:hover {
+        background-color: #3b5998;
+    }
+
+    .instagram:hover {
+       background: linear-gradient(#6559ca,#bc318f 30%,#e42e66 50%,#fa5332 70%,#ffdc80 100%);
+    }
+
+    .twitter:hover{
+        background-color: #00aced;
+    }
+
+    .youtube:hover{
+        background-color: #bb0000;
+    }
+
+    .spotify:hover {
+        background-color: #7ab800;
+    }
+
+    .deezer:hover {
+        background-color: #d3222a;
     }
 
     a {

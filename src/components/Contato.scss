@@ -1,0 +1,32 @@
+.contatos {
+	h3 {
+		margin-left: 15px;
+        margin-bottom: 0;
+	}
+    
+    p {
+        margin-left: 3rem;
+        margin-bottom: 4rem;
+    }
+
+    .iconAlt {
+        margin-right: 0.5rem;
+    }
+
+	.form {
+		max-width: 600px;
+		height: 360px;
+
+        background-color: rgba(128, 128, 128, 0.486);
+
+		.btn-form {
+			margin: 16px 0;
+			margin-left: 16px;
+		}
+
+        .form-control {
+            border-radius: unset;
+            background-clip:unset;
+        }
+	}
+}

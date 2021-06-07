@@ -6,11 +6,11 @@ const NavBar = () => (
 	<section className="navBar">
 		<Container className="navBar--container d-flex flex-row fw-bold">
 			<div className="d-flex flex-row align-items-center">
-				<h1 className="pe-5">Cardosão</h1>
+				<h1>Cardosão</h1>
 			</div>
 
-			<nav className="d-flex flex-row justify-content-between">
-				<ul className="d-flex flex-row ps-5 m-0">
+			<nav className="d-flex flex-row justify-content-end">
+				<ul className="d-flex flex-row ps-5 mb-0 mr-5">
 					<li>
 						<a href="www.bit.com">Home</a>
 					</li>
@@ -24,7 +24,7 @@ const NavBar = () => (
 					</li>
 
 					<li>
-						<a href="www.bit.com">Parcerias</a>
+						<a href="www.bit.com">Realese</a>
 					</li>
 
 					<li>
@@ -33,7 +33,9 @@ const NavBar = () => (
 				</ul>
 
 				<a
-					className='btn btn-primary fw-bold' role="button" data-bs-toggle="button"
+					className="btn btn-primary fw-bold"
+					role="button"
+					data-bs-toggle="button"
 					href="www.bit.com"
 				>
 					Loja

@@ -19,6 +19,7 @@
 
 	ul {
 		list-style-type: none;
+		margin-right: 100px;
 	}
 
 	li {
@@ -32,6 +33,10 @@
 	a {
 		color: #fff;
 		text-decoration: none;
+	}
+
+	a:hover{
+		color: #ddd;
 	}
 
 	.btn {
