@@ -1,6 +1,10 @@
 .contatos {
+    .alinha-md {
+        margin-left: 12.5rem;
+    }
+
 	h3 {
-		margin-left: 15px;
+		margin-left: 1rem;
         margin-bottom: 0;
 	}
     
@@ -14,19 +18,12 @@
     }
 
 	.form {
-		max-width: 600px;
-		height: 360px;
-
         background-color: rgba(128, 128, 128, 0.486);
-
-		.btn-form {
-			margin: 16px 0;
-			margin-left: 16px;
-		}
 
         .form-control {
             border-radius: unset;
             background-clip:unset;
         }
 	}
+
 }

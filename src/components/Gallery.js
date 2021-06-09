@@ -7,7 +7,7 @@ import foto4 from "../assets/foto4.jpg";
 const { Image } = require("react-bootstrap");
 
 const Gallery = () => (
-	<section className="text-center mb-5">
+	<section id='gallery' className="text-center mb-5">
 		<Image className="microfone my-4" src={microfone} alt="icone" />
 		<h2 className="mb-3 title">Gallery</h2>
 

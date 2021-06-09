@@ -1,10 +1,6 @@
-.show__brazuca {
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-  grid-column-gap: 3rem;
-  place-items: center;
+.item {
+  padding: 20px;
   border-bottom: 1px solid #3333;
-  padding: 2.5rem;
 
   h3 {
   font-size: 0.9375rem;

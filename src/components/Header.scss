@@ -1,5 +1,6 @@
 header{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(31, 32, 33, 0.3);
+    transition: .3s ease-in-out;
 }
 
 .header--section {
@@ -59,3 +60,11 @@ header{
     }
 
 }
+
+@media screen and (max-width: 576px) {
+    .header--section {
+        padding: 0 10px;
+    }
+}
+
+/* Animação */

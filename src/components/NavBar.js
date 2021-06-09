@@ -1,48 +1,57 @@
 import "./NavBar.scss";
 
-import { Container } from "react-bootstrap";
+import { Col, Container, Row, Button } from "react-bootstrap";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const NavBar = () => (
-	<section className="navBar">
-		<Container className="navBar--container d-flex flex-row fw-bold">
-			<div className="d-flex flex-row align-items-center">
-				<h1>Cardosão</h1>
-			</div>
+	<nav>
+		<Container>
+			<Row className='fw-bold'>
+				<Col className="d-flex justify-content-start">
+					<h1>Cardosão</h1>
+				</Col>
 
-			<nav className="d-flex flex-row justify-content-end">
-				<ul className="d-flex flex-row ps-5 mb-0 mr-5">
-					<li>
-						<a href="www.bit.com">Home</a>
-					</li>
-
-					<li>
-						<a href="www.bit.com">Agenda</a>
-					</li>
-
-					<li>
-						<a href="www.bit.com">Galeria</a>
-					</li>
-
-					<li>
-						<a href="www.bit.com">Realese</a>
-					</li>
-
-					<li>
-						<a href="www.bit.com">contato</a>
-					</li>
-				</ul>
-
-				<a
-					className="btn btn-primary fw-bold"
-					role="button"
-					data-bs-toggle="button"
-					href="www.bit.com"
+				<Col
+					lg={8}
+					className="d-lg-flex d-none  align-items-center justify-content-between"
 				>
-					Loja
-				</a>
-			</nav>
+					<ul className="d-flex mb-0">
+						<li>
+							<AnchorLink href="#home">Home</AnchorLink>
+						</li>
+
+						<li>
+							<AnchorLink href="#agenda" offset="100">
+								Agenda
+							</AnchorLink>
+						</li>
+
+						<li>
+							<AnchorLink href="#gallery" offset="100">
+								Galeria
+							</AnchorLink>
+						</li>
+
+						<li>
+							<AnchorLink href="#release" offset="100">
+								Release
+							</AnchorLink>
+						</li>
+
+						<li>
+							<AnchorLink href="#contato" offset="100">
+								contato
+							</AnchorLink>
+						</li>
+					</ul>
+
+					<Button className="text-uppercase fw-bold d-flex align-items-center justify-content-center">
+						Loja
+					</Button>
+				</Col>
+			</Row>
 		</Container>
-	</section>
+	</nav>
 );
 
 export default NavBar;

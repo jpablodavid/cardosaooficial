@@ -1,76 +1,110 @@
-import './Agenda.scss';
+import "./Agenda.scss";
+
 import microfone from "../assets/microfone.png";
 import foto1 from "../assets/foto1.jpg";
 
+import { faClock } from "@fortawesome/free-solid-svg-icons";
+const { FontAwesomeIcon } = require("@fortawesome/react-fontawesome");
 
-const { Button, Image } = require("react-bootstrap");
+const { Button, Image, Container, Row, Col } = require("react-bootstrap");
 
 const Agenda = () => (
-	<section className="text-center mb-5">
+	<section id="agenda" className="text-center mb-5">
 		<Image className="microfone my-4" src={microfone} alt="icone" />
 
 		<h2 className="mb-3 title">Agenda</h2>
 
-		<div id="events__list">
-			<div class="container events__list__div">
-				<div class="show__brazuca">
-					<div>
-						<Image src={foto1} alt="icone" />
-					</div>
-					<div>
-						<h2>Show Cardosão</h2>
-						<h3>
-							<i class="far fa-clock"></i>12 de setembro às 20H
-						</h3>
-						<p>
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae,
-							quam obcaecati voluptas magnam consequatur.
-						</p>
-					</div>
-					<div class="brazuca__button">
-						<Button class="btn btn--institutional">Saiba Mais</Button>
-					</div>
-				</div>
+		<Container>
+			<Row className="item mb-5">
+				<Col className="mb-3" xs={12} md={4}>
+					<Image src={foto1} alt="icone" />
+				</Col>
+				<Col
+					className="d-flex flex-column justify-content-center"
+					xs={12}
+					md={4}
+				>
+					<h2>Show Cardosão</h2>
+					<h3>
+						<FontAwesomeIcon icon={faClock} />
+						12 de setembro às 20H
+					</h3>
+					<p>
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae,
+						quam obcaecati voluptas magnam consequatur.
+					</p>
+				</Col>
+				<Col
+					className="d-flex flex-column justify-content-center align-items-center mb-sm-5"
+					xs={12}
+					md={4}
+				>
+					<Button className="w-md-25" size="sm">
+						Saiba Mais
+					</Button>
+				</Col>
+			</Row>
 
-				<div class="show__brazuca">
-					<div>
-						<Image src={foto1} alt="icone" />
-					</div>
-					<div>
-						<h2>Show Cardosão</h2>
-						<h3>
-							<i class="far fa-clock"></i>12 de setembro às 20H
-						</h3>
-						<p>
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae,
-							quam obcaecati voluptas magnam consequatur.
-						</p>
-					</div>
-					<div class="brazuca__button">
-						<Button class="btn btn--institutional">Saiba Mais</Button>
-					</div>
-				</div>
+			<Row className="item mb-5">
+				<Col xs={12} md={4}>
+					<Image className="mb-3" src={foto1} alt="icone" />
+				</Col>
+				<Col
+					className="d-flex flex-column justify-content-center align-items-center"
+					xs={12}
+					md={4}
+				>
+					<h2>Show Cardosão</h2>
+					<h3>
+						<FontAwesomeIcon icon={faClock} />
+						12 de setembro às 20H
+					</h3>
+					<p>
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae,
+						quam obcaecati voluptas magnam consequatur.
+					</p>
+				</Col>
+				<Col
+					className="d-flex flex-column justify-content-center align-items-center"
+					xs={12}
+					md={4}
+				>
+					<Button className="w-md-25" size="sm">
+						Saiba Mais
+					</Button>
+				</Col>
+			</Row>
 
-				<div class="show__brazuca">
-					<div>
-						<Image src={foto1} alt="icone" />
-					</div>
-					<div>
-						<h2>Show Cardosão</h2>
-						<h3>
-							<i class="far fa-clock"></i>12 de setembro às 20H
-						</h3>
-						<p>
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae,
-							quam obcaecati voluptas magnam consequatur.
-						</p>
-					</div>
-					<div class="brazuca__button">
-						<Button class="btn btn--institutional">Saiba Mais</Button>
-					</div>
-				</div>
-			</div>
-		</div>
+			<Row className="item mb-5">
+				<Col xs={12} md={4}>
+					<Image className="mb-3" src={foto1} alt="icone" />
+				</Col>
+				<Col
+					className="d-flex flex-column justify-content-center"
+					xs={12}
+					md={4}
+				>
+					<h2>Show Cardosão</h2>
+					<h3>
+						<FontAwesomeIcon icon={faClock} />
+						12 de setembro às 20H
+					</h3>
+					<p>
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae,
+						quam obcaecati voluptas magnam consequatur.
+					</p>
+				</Col>
+				<Col
+					className="d-flex flex-column justify-content-center align-items-center"
+					xs={12}
+					md={4}
+				>
+					<Button className="w-md-25" size="sm">
+						Saiba Mais
+					</Button>
+				</Col>
+			</Row>
+		</Container>
 	</section>
 );
 

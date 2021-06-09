@@ -13,69 +13,69 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const Contato = () => (
-	<section className="contatos mb-5">
+	<section id="contato" className="contatos mb-5">
 		<Container>
 			<div className="text-center mb-5">
 				<Image className="microfone my-4 " src={microfone} alt="icone" />
 
 				<h2 className="title">Contato</h2>
 			</div>
-			<Row className="px-5 mx-5 mt-3">
-				<Col>
-					<div className="d-flex">
-						<FontAwesomeIcon icon={faPhone} size="2x" />
-						<h3>Telefone</h3>
-					</div>
-					<p>+55 21 987456321</p>
+			<Row className="d-flex justify-content-evenly">
+				<Col md={1} lg={2}></Col>
+				<Col xs={12} md={5} lg={4}>
+					<Row>
+						<div className="d-flex">
+							<FontAwesomeIcon icon={faPhone} size="2x" />
+							<h3>Telefone</h3>
+						</div>
+						<p>+55 21 987456321</p>
+					</Row>
 
-					<div className="d-flex">
-						<FontAwesomeIcon icon={faEnvelope} size="2x" />
+					<Row>
+						<div className="d-flex">
+							<FontAwesomeIcon icon={faEnvelope} size="2x" />
+							<h3>Email</h3>
+						</div>
+						<p>CardosaoOficial@gmail.com</p>
+					</Row>
 
-						<h3>Email</h3>
-					</div>
-					<p>CardosaoOficial@gmail.com</p>
-
-					<div className="d-flex">
-						<FontAwesomeIcon
-							icon={faMapMarkerAlt}
-							size="2x"
-							className="iconAlt"
-						/>
-
-						<h3>Caixa Postal</h3>
-					</div>
-					<p className="mb-0">Rua: Marape, 450</p>
-					<p>Marechal Hermes</p>
+					<Row className="">
+						<div className="d-flex">
+							<FontAwesomeIcon
+								icon={faMapMarkerAlt}
+								size="2x"
+								className="iconAlt"
+							/>
+							<h3>Caixa Postal</h3>
+						</div>
+						<p className="mb-0">Rua: Marape, 450</p>
+						<p>Marechal Hermes</p>
+					</Row>
 				</Col>
-				<Col className="form p-2 rounded">
-					<Form>
-						<Form.Group className="m-3" controlId="formBasicName">
-							<Form.Control type="name" placeholder="Nome Completo" />
-						</Form.Group>
-
-						<Form.Group className="m-3" controlId="formGroupTel">
-							<Form.Control type="telefone" placeholder="Telefone" />
-						</Form.Group>
-
-						<Form.Group className="mx-3" controlId="formBasicEmail">
-							<Form.Control type="email" placeholder="Enter email" />
-							<Form.Text className="text-muted">
-								We'll never share your email with anyone else.
-							</Form.Text>
-						</Form.Group>
-
-						<Form.Group
-							className="mx-3"
-							controlId="exampleForm.ControlTextarea1"
-						>
-							<Form.Control as="textarea" rows={3} placeholder="Mensagem" />
-						</Form.Group>
-
-						<Button className="btn-form" variant="primary" type="submit">
-							Enviar Mensagem
-						</Button>
-					</Form>
+				<Col xs={12} md={5}>
+					<div className="form w-100 rounded p-4">
+						<Form>
+							<Form.Group className="mb-2" controlId="formBasicName">
+								<Form.Control type="name" placeholder="Nome Completo" />
+							</Form.Group>
+							<Form.Group className="mb-2" controlId="formGroupTel">
+								<Form.Control type="telefone" placeholder="Telefone" />
+							</Form.Group>
+							<Form.Group className="mb-2" controlId="formBasicEmail">
+								<Form.Control type="email" placeholder="Enter email" />
+								<Form.Text className="text-muted"></Form.Text>
+							</Form.Group>
+							<Form.Group
+								className="mb-4"
+								controlId="exampleForm.ControlTextarea1"
+							>
+								<Form.Control as="textarea" rows={3} placeholder="Mensagem" />
+							</Form.Group>
+							<Button type="submit">Enviar Mensagem</Button>
+						</Form>
+					</div>
 				</Col>
+				<Col md={1}></Col>
 			</Row>
 		</Container>
 	</section>
