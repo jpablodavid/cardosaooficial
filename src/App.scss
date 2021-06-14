@@ -10,3 +10,22 @@
     text-transform: uppercase;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+@media screen and (max-width: 560px) {
+    html{
+        font-size: 4.25vw;
+    }
+    
+}
+
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+    html{
+        font-size: 2.25vw;
+    }
+}

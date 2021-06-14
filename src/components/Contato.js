@@ -71,7 +71,7 @@ const Contato = () => (
 							>
 								<Form.Control as="textarea" rows={3} placeholder="Mensagem" />
 							</Form.Group>
-							<Button type="submit">Enviar Mensagem</Button>
+							<Button>Enviar Mensagem</Button>
 						</Form>
 					</div>
 				</Col>

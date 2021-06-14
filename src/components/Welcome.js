@@ -17,7 +17,11 @@ const Welcome = () => (
 				></iframe>
 			</div>
 
-			<Button className="btn px-md-5" variant="danger">
+			<Button
+				href="https://www.youtube.com/channel/UC4v8xIo_4S8CKeIJCFF_iXw"
+				className="btn px-md-5"
+				target="_blank"
+			>
 				Inscreva-se no canal
 			</Button>
 		</Container>

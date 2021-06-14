@@ -1,56 +1,107 @@
-nav {
-	background-color: rgba(255, 127, 80, 0.192);
+.nav-start {
+	background-color: rgba(255, 127, 80, 0.2);
 	text-transform: uppercase;
-	
-	h1 {
+	justify-content: space-between;
+
+	.logo {
+		width: 25vw;
+		height: auto;
 		font-size: 3rem;
-		color: #fff;
+		margin-right: 2.5rem;
 	}
 
+	
+
 	@media screen and (max-width: 560px) {
-		h1 {
+		.logo {
 			font-size: 2rem;
-			padding-left: 10px;
+			margin-left: 30px;
 		}
-    }
-	
-	li {
-		list-style-type: none;
-		width: 9vw;
 	}
-	
+
+	@media screen and (max-width: 900px) and (min-width: 600px) {
+		.logo {
+			margin-left: 15px;
+		}
+	}
+
 	a {
-		color: #fff;
+		color: #fff !important;
 		text-decoration: none;
 		text-justify: center;
+		width: 9vw;
 	}
-	
-	a:hover{
-		color: #ddd;
+
+	a:hover {
+		color: #ddd !important;
 	}
-	
-	a:active {
-		color: #124F7B;
-	}
-	
+
 	.btn {
 		width: 100px;
 		height: 35px;
-		background-color: rgba(255,255,255,.3);
+		background-color: rgba(255, 255, 255, 0.3);
 		border-color: transparent;
 	}
-	
+
 	.btn:hover {
-		color: #FFF;
-		background-color: #124F7B;
+		color: #fff;
+		background-color: #124f7b;
+		border-color: #124f7b;
 	}
 }
 
 
+.nav-final {
+	background-color: rgba(255, 127, 80, 0.9);
+	text-transform: uppercase;
 
 
-	
-	
+	.logo {
+		width: 25vw;
+		height: auto;
+		font-size: 2.5rem;
+		margin-right: 2rem;
+		align-items: flex-start;
+	}
 
+	@media screen and (max-width: 560px) {
+		.logo {
+			font-size: 1.5rem;
+			margin-left: 30px;
+		}
+	}
 
+	.navbar-toggler {
+		font-size: 1rem;
+	}
+
+	a {
+		color: #fff !important;
+		text-decoration: none;
+		text-justify: center;
+		width: 9vw;
+	}
+
+	a:hover {
+		color: #ddd !important;
+	}
+
+	.btn {
+		width: 100px;
+		height: 35px;
+		background-color: rgba(255, 255, 255, 0.3);
+		border-color: transparent;
+	}
+
+	.btn:hover {
+		color: #fff;
+		background-color: #124f7b;
+		border-color: #124f7b;
+	}
+}
+
+.navbar,
+.navbar-brand {
+	padding: 0;
+}
 

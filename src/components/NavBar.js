@@ -1,57 +1,68 @@
 import "./NavBar.scss";
 
-import { Col, Container, Row, Button } from "react-bootstrap";
+import React, { useEffect, useState } from "react";
+
+import {
+	Navbar,
+	Nav,
+	Col,
+	Container,
+	Row,
+	Button,
+} from "react-bootstrap";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
-const NavBar = () => (
-	<nav>
-		<Container>
-			<Row className='fw-bold'>
-				<Col className="d-flex justify-content-start">
-					<h1>Cardosão</h1>
-				</Col>
+const NavBar = () => {
+	const [navSize, setNavSize] = useState("nav-start");
 
-				<Col
-					lg={8}
-					className="d-lg-flex d-none  align-items-center justify-content-between"
+	const navRef = React.useRef();
+	navRef.current = navSize;
+
+	useEffect(() => {
+		const handleScroll = () => {
+			const show = window.scrollY > 310;
+			if (show) {
+				setNavSize("nav-final");
+			} else {
+				setNavSize("nav-start");
+			}
+		};
+		document.addEventListener("scroll", handleScroll);
+		return () => {
+			document.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
+
+	return (
+		<Navbar className={navRef.current} expand="lg">
+			<Container className='h-100'>
+				<Navbar.Brand
+					className="h-100 logo d-flex align-items-center justify-content-center"
+					href="#home"
 				>
-					<ul className="d-flex mb-0">
-						<li>
-							<AnchorLink href="#home">Home</AnchorLink>
-						</li>
-
-						<li>
-							<AnchorLink href="#agenda" offset="100">
-								Agenda
-							</AnchorLink>
-						</li>
-
-						<li>
-							<AnchorLink href="#gallery" offset="100">
-								Galeria
-							</AnchorLink>
-						</li>
-
-						<li>
-							<AnchorLink href="#release" offset="100">
-								Release
-							</AnchorLink>
-						</li>
-
-						<li>
-							<AnchorLink href="#contato" offset="100">
-								contato
-							</AnchorLink>
-						</li>
-					</ul>
-
+					Cardosão
+				</Navbar.Brand>
+				<Navbar.Toggle className="align-items-center justify-content-center"
+					aria-controls="basic-navbar-nav"
+				/>
+				<Navbar.Collapse
+					className="fw-bold py-2"
+					id="basic-navbar-nav"
+				>
+					<Nav >
+						<Nav.Link href="#home">Home</Nav.Link>
+						<Nav.Link href="#agenda">Agenda</Nav.Link>
+						<Nav.Link href="#Gallery">Galeria</Nav.Link>
+						<Nav.Link href="#Release">Release</Nav.Link>
+						<Nav.Link href="#Contato">Contato</Nav.Link>
+					</Nav>
 					<Button className="text-uppercase fw-bold d-flex align-items-center justify-content-center">
 						Loja
 					</Button>
-				</Col>
-			</Row>
-		</Container>
-	</nav>
-);
+				</Navbar.Collapse>
+			</Container>
+		</Navbar>
+	);
+};
 
 export default NavBar;
